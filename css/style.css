@@ -94,13 +94,13 @@ button p a, i {
 ----------------------------------------- */
 
 
-.players-part{
+.matches-part{
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-column-gap: 15px;
     margin: 100px 0;
 }
-.players-part p , a {
+.matches-part p , a , h4 {
     color: #161616;
 }
 nav {
@@ -147,7 +147,7 @@ nav {
 
 
 
-.player-boxes {
+.match-boxes {
     display: grid;
     grid-template-columns: repeat(3 , 3fr);
     grid-column-gap: 0px;
@@ -158,40 +158,36 @@ nav {
 .box-card {
     margin: 6px;
     border: .5px solid lightslategray;
-    border-radius: 10px 10px 0 0;
     width: 80%;
 }
-.player-description button{
-    background-color: #FFFFFF;
-    border: 2px solid #161616;
-}
-.player-description button a , .Live-game{
-    font-weight: 550;
-    color: #161616;
-}
+
 .box-card .paler-pic{
     width: 100%;
 }
 .box-card .paler-pic img{
     width: 100%;
 }
-.player-description {
-    padding: 5px;
+.flags-pic {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 31px 17px 0;
+}
+.flags-pic img{
+    width: 75px;
+}
+.match-start-time {
+    padding: 24px;
+    text-align: center;
 }
 svg{
     width: 15px;
     height: 15px;
     margin-top: 10px;
 }
-.time-and-commands{
-        display: grid;
-        grid-template-columns: .7fr 2fr .7fr 2fr 2fr;
-        align-items: end;
-}
 
-#view{
-    display: none;
-}
+
 
 /* ---------------------------------------- 
            main part end 
@@ -247,276 +243,3 @@ footer{
 ----------------------------------------- */
 
 
-
-
-
-/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- */
-
-
-
- /* for small vedice */
- @media screen and (max-width: 680px) {
-   
-
-    /* ---------------------------------------- 
-           banner part start 
-    ----------------------------------------- */
-        .container {
-            width: 380px;
-            margin: 0 auto;
-        }
-        .banner-content {
-            display: flex;
-            flex-direction: column;
-            background-color: #161616;
-            border-radius: 20px;
-            justify-items: center;
-            margin: 10px 0;
-            align-items: center;
-        }
-    
-        .banner-title {
-            width: 90%;
-            text-align: center;
-            display: grid;
-            justify-items: center;
-            padding-top: 40px;
-        }
-
-        .football-man {
-            width: 63%;
-            padding-top: 22px;
-        }
-        .football-man img{
-            width: 100%;
-        }
-
-    /* ---------------------------------------- 
-           banner part end 
-    ----------------------------------------- */ 
-    
-    
-
-
-
-
-
-
-    /* ---------------------------------------- 
-          main part start
-    ----------------------------------------- */
-
-    .players-part {
-        display: flex;
-        flex-direction: column;
-        grid-column-gap: 15px;
-        margin: 0px 0;
-    }
-    nav {
-        display: flex;
-        justify-items: end;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        border-radius: 10px;
-        height: 260px;
-        background-color: #FFFFFF;
-    }
-    .upcoming-match p, .all-groups p {
-        padding: 12px 9px;
-        border-radius: 5px;
-        font-size: 22px;
-        font-weight: 550;
-        border: 1px solid #161616;
-    }
-    .blog p{
-        border: 1px solid #ff0000;
-    }
-    #view{
-        display: none;
-    }
-
-
-
-/* player section */
-
-
-    .player-boxes {
-        display: flex;
-        flex-direction: column;
-        grid-row-gap: 20px;
-        align-items: center;
-        margin-bottom: 35px;
-    }
-    
-    .box-card {
-        display: flex;
-        flex-direction: column;
-        border: 0.5px solid #16161630;
-        border-radius: 10px 10px 0 0;
-        width: 90%;
-    }
-
-    .box-card .paler-pic img {
-        width: 100%;
-    }
-
-    /* ---------------------------------------- 
-          main part end
-    ----------------------------------------- */
-
-
-
-    /* =======================================
-               footer part start
-    ========================================== */
-
-    .footer-contents {
-        display: flex;
-        flex-direction: column;
-        grid-row-gap: 11px;
-        padding: 34px 0;
-        align-items: center;
-    }
-
-    .footer-contents {
-        display: flex;
-        flex-direction: column;
-        grid-row-gap: 11px;
-        padding: 34px 0;
-        background-color: #161616;
-        align-items: center;
-    }
-
-    .services {
-        display: flex;
-        flex-direction: column;
-        grid-row-gap: 8px;
-        align-items: center;
-    }
-
-    /* =======================================
-               footer part end
-    ========================================== */
-
-  }
-
-/* ----------------------------------------------------------------------------------------------------------------------------------
- */
-
-
- /* for Tablet */
-
-@media screen and (min-width: 688px) and (max-width: 922px){
-
-
-
-    .container {
-        width: 680px;
-        margin: 0 auto;
-    }
-/*========================================================                            banner part start     
-=========================================================*/
-    .banner-content {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        background-color: #161616;
-        border-radius: 20px;
-        justify-items: center;
-        align-items: center;
-        margin: 40px 0 1px;
-    }
-    .players-part {
-        display: flex;
-        flex-direction: column;
-        grid-column-gap: 15px;
-        margin: 0px 0;
-        margin-bottom: 50px;
-    }
-
-    nav {
-        display: flex;
-        justify-items: end;
-        flex-direction: column;
-        align-items: stretch;
-        background-color: #ffffff;
-        align-content: center;
-        border-radius: 10px;
-        height: 90px;
-    }
-
-    .navigation {
-        display: grid;
-        grid-template-columns: repeat(3 , 1fr);
-        grid-column-gap: 10px;
-        padding: 20px 0;
-    }
-
-    .upcoming-match p, .all-groups p {
-        border: 1px solid #16161624;
-    }
-
-    .player-boxes {
-        display: grid;
-        grid-template-columns: repeat(2 , 3fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 0px;
-        justify-items: center;
-    }
-
-    .box-card {
-        margin: 6px;
-        border: 0.5px solid lightslategray;
-        border-radius: 10px 10px 0 0;
-        width: 100%;
-    }
-    #view {
-        display: grid;
-        justify-items: center;
-    }
-
-
-/*========================================================                            banner part end     
-=========================================================*/
-
-
-
-
-
-
-/*========================================================                            main part start     
-=========================================================*/
-
-
-.player-7 , .player-8 , .player-9{
-    display: none;
-}
-
-/*========================================================                            main part end     
-=========================================================*
-
-
-
-
-/
-/*========================================================                            footer part start     
-=========================================================*/
-    .footer-contents {
-        display: grid;
-        justify-items: center;
-        grid-row-gap: 11px;
-        padding: 40px 0 55px;
-    }
-    .services {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 45px;
-        grid-row-gap: 10px;
-        justify-items: center;
-    }
-
-/*========================================================                            footer part end     
-=========================================================*/
-
-}
